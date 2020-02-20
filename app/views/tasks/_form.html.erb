@@ -10,7 +10,11 @@
   <% end %>
   
   <%= f.label :content, 'タスク' %>
-  <%= f.text_field :content, placeholder: '例：食器を洗う、ゴミを出す　等' %>
+  <%= f.text_field :content, placeholder: '例：食器を洗う' %>
+  
+  <%= f.label :status, 'ステータス' %>
+  <%= f.text_field :status, placeholder: '未or作業中or済' %>
+  
   
   <%= f.submit '投稿' %>
 <% end %>
